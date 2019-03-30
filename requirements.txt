@@ -1,0 +1,5 @@
+Flask
+flask-restplus
+Flask-SSLify
+Flask-Admin
+gunicorn

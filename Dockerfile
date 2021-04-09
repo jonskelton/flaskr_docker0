@@ -1,5 +1,7 @@
 FROM python:3-alpine
 
+RUN apk -U upgrade
+
 COPY ./requirements.txt /flaskr/requirements.txt
 
 ARG FLASK_APP=flaskr

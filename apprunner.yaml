@@ -1,0 +1,11 @@
+version: 1.0
+runtime: python3
+build:
+ commands:
+  build:
+  - pip install -r requirements.txt
+  - flask init-db
+run:
+ command: gunicorn -w 4 -b 0.0.0.0 flaskr.wsgi:app
+ network:
+   port: 8000
